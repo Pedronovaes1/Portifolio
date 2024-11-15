@@ -62,7 +62,7 @@ ul a > svg{
 .section-front .about-my{
     display: flex;
     flex-direction: column;
-    align-items: justify;
+    align-items: flex-start;
     margin: 20px;
     width: 55%;
 }
@@ -73,7 +73,7 @@ ul a > svg{
 }
 
 .section-front .about-my p{
-    font-size: 20px;
+    font-size: 16px;
     line-height: 30px;
     text-align: justify;
     color: #666;
@@ -134,7 +134,7 @@ ul a > svg{
 
 .section-project img{
     width: 100%;
-    border-radius: 70px;
+    border-radius: 10px;
     width: 45%;
     margin: 20px;
 }
