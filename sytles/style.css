@@ -1,0 +1,191 @@
+html{
+    scroll-behavior: smooth; /*Suavizar*/
+}
+
+header{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 40px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);      
+
+    /*Para scrool da página*/
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+main{
+    margin: 0px 150px;
+}
+
+header ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+header li{
+    list-style: none;
+    margin: 15px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    color: blue;
+}
+
+ul a > svg{
+    width: 25px;
+    height: 25px;
+    margin-left: 25px;
+}
+
+/*DESIGNER DA PÁGINA PRINCIPAL*/
+.section-front{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.my-image{
+    width: 45%;
+    border-radius: 40px;
+    margin: 20px;  
+}
+
+.section-front .about-my{
+    display: flex;
+    flex-direction: column;
+    align-items: justify;
+    margin: 20px;
+    width: 55%;
+}
+
+.section-front .about-my h1{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.section-front .about-my p{
+    font-size: 20px;
+    line-height: 30px;
+    text-align: justify;
+    color: #666;
+}
+
+/*DESIGNER DAS HARDS SKILLS*/
+.section-hardskill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-hardskill h2{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    color: rgba(33, 32, 32, 0.61);
+}
+
+.section-hardskill .div-hardskill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-hardskill img{
+    width: 50px;
+    height: 50px;
+    margin: 40px;
+    border-radius: 5px;
+}
+
+.section-project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.section-project .description-project{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    width: 55%;
+}
+
+.description-project p{
+    margin-bottom: 10px;
+    line-height: 25px;
+    color: #666;
+}
+
+.description-project h1{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.section-project img{
+    width: 100%;
+    border-radius: 70px;
+    width: 45%;
+    margin: 20px;
+}
+
+.arrow-project p{
+    text-decoration: underline;
+    margin-top: 10px;
+    color: #333;
+    font-weight: bold;
+}
+
+/*DESIGNER DO Contato*/
+
+.contact{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.contact .description{
+    text-align: center;
+}
+
+.contact p{
+    color: #666;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+#instagram{
+    padding: 15px 25px;
+    background-color: #66018f;
+    margin: 10px 0;
+    border-radius: 10px;
+    color: white;
+}
+
+#curriculo{
+    color: #66018f;
+    margin: 15px 20px;
+}
+
+/*DESIGNER DO FOOTER*/
+
+footer{
+    padding: 20px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1); 
+    text-align: center;
+}
+
+footer a{
+    margin: 30px;
+}
