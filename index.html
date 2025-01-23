@@ -7,110 +7,164 @@
     <link rel="stylesheet" href="sytles/style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
+    <link rel="stylesheet" href="sytles/mobile.css">
+
     <title>Portifólio</title>
 </head>
-<body>
+<body onload="initMap()">
     <header>
         <h1>Pedro Novaes</h1>
         <nav>
             <ul>
                 <li><a href="#section-main">Sobre</a></li>
-                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#portfolio">Projetos</a></li>
                 <li><a href="#page-contact">Contatos</a></li>
-                <li><a href="https://www.linkedin.com/in/pedrocnovaes/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a></li>
+                <li class="list"><a href="https://www.linkedin.com/in/pedrocnovaes/"><i class="fa-brands fa-linkedin-in fa-lg"></i></a></li>
             </ul>   
         </nav>
     </header>
     <main>
         <section id="section-main" class="section-front">
             <div class="about-my">
-                <h1>Olá! Me chamo Pedro</h1>
-                <p style="color: #66018f ; margin-bottom: 10px;"><b>Desenvolvedor Fullstack Junior, me formando em Ciência da Computação</b></p>
-                <p>Desenvolvedor Fullstack Junior com conhecimento em Java, Spring, React.JS e Docker. Criação de soluções escaláveis, desenvolvimento de Sistemas Web, APIs RESTful e prototipação de software, com domínio em Git e GitHub. Comprometido em transformar desafios em resultados eficientes. Sempre em busca de mais aprendizado e conhecimento.</p>
+                <h1>
+                    Olá, meu nome é <span style="color:#ef4444">Pedro Novaes </span>
+                    <br />
+                    <span>Desenvolvedor FullStack</span>
+                  </h1>
+                <p>Adoro criar soluções bonitas e eficientes que ajudem meus clientes a atingir seus objetivos. Estou aqui para ajudar a transformar suas ideias em realidade. Vamos construir algo incrível juntos.</p>
             </div>
                 
             <img class="my-image" src="images/profile-pic (1).png" alt="My image">
         </section><!-- End - section-front -->
-        <section id="section-hardskills" class="section-hardskill">
-            <h2>
-                Hard Skills
-            </h2>
-            <div class="div-hardskill">
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" title="Java Script" />
-
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original-wordmark.svg" alt="HTML 5" title="HTML 5"/>
-                
-                    
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original-wordmark.svg" title="CSS 3"/> 
-                
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" title="React"/>
-        
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" title="Java" />
+    
+        <!-- Features Section -->
+        <section id="features" class="container">
+            <h2 class="section-title">O que eu faço</h2>
+            <div class="grid">
+            <!-- Card -->
+            <div class="card">
+                <div class="card-content">
+                <div class="icon"><i class="fa-solid fa-code" style="color: #ef4444; font-size: 30px;"></i></div>
+                <h3 class="card-title">Desenvolvimento de aplicações web</h3>
+                <p class="card-description">Crio sites, landing pages e sistemas responsivos utilizando React, HTML, CSS e JavaScript. As aplicações são modernas, interativas e responsivas.</p>
                 </div>
-                <div>
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/spring/spring-original.svg" title="Spring Framework"/>
-                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" title="Python"/>
-          
-            
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" title="PostgreSQL"/>  
-                
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg" title="DOCKER"/>
-           
-                </div>  
-            </div> 
-        </section>  <!-- End - section-hardskill -->
+            </div>
+            <div class="card">
+                <div class="card-content">
+                <div class="icon"><i class="fa-solid fa-rocket" style="color: #ef4444; font-size: 30px;"></i></div>
+                <h3 class="card-title">Automatização de Processos</h3>
+                <p class="card-description">Desenvolvo soluções para otimizar tarefas repetitivas, como envio automático de dados para planilhas, integração de sistemas e configuração de fluxos de trabalho eficientes.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                <div class="icon"><i class="fa-regular fa-handshake" style="color: #ef4444; font-size: 30px;"></i></div>
+                <h3 class="card-title">Soluções Corporativas</h3>
+                <p class="card-description">Crio sistemas personalizados para empresas, como plataformas de gestão, integração de APIs e otimização de processos internos.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                <div class="icon"><i class="fa-solid fa-code-branch" style="color: #ef4444; font-size: 30px;"></i></div>
+                <h3 class="card-title">Desenvolvedor FullStack</h3>
+                <p class="card-description">Crio aplicações completas, do frontend ao backend, com React, Node.js, Java e Spring.</p>
+                </div>
+            </div>
+        </section>
 
-        <section id="projects" class="section-project">
-            <div class="description-project">
-                <p style="color:#66018f"><b>Desenvolvedor Frontend - Quadro Kanban</b></p>
-                <h1>Quadro Kanban</h1>
-                <p>Um Quadro Kaban desenvolvido em HTML, Css e JavaScritp.<br>Feito para facilitar o gerenciamento das tarefas do dia dia. </p>
-                <a href="https://github.com/Pedronovaes1/atividade_lista_tarefas" class="arrow-project"><p>Leia o caso de estudo. <i class="fa-solid fa-arrow-right"></i></p></a>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="container">
+            <h2 class="section-title">Meu Portfólio</h2>
+            <div class="grid">
+            <!-- Cards -->
+            <div class="card" onclick="openModal()">
+                <div class="image-container">
+                <img src="images/salao.png" alt="Project Title" class="image" />
+                </div>
+                <div class="card-content">
+                <h3 class="card-title">Sistema de Gerenciamento de Salões</h3>
+                <div class="tags">
+                    <span class="tag">Next.js</span>
+                    <span class="tag">Tailwind CSS</span>
+                    <span class="tag">Spring Boot</span>
+                    <span class="tag">Java</span>
+                    <span class="tag">PostgreSQL</span>
+                </div>
+                <p class="card-description">O sistema inclui agendamentos, gerenciamento de clientes, fichas de anamnese e filtro por região, oferecendo uma solução moderna e eficiente para otimizar a gestão de salões, como também o agendamento da cliente.</p>
+                </div>
             </div>
-            
-            <img src="images/Kaban.png" alt="Kaban Image">
-           
-        </section><!-- End - section-project -->
-        <section class="section-project">
-            <div class="description-project">
-                <p style="color:#66018f"><b>Desenvolvedor Frontend - Lista de Tarefas</b></p>
-                <h1>Lista de Tarefas</h1>
-                <p>Lista de Tarefas feita em HTML, CSS e JavaScript. <br> Podendo deletar e adicionar tarefas no quadro.</p>
-                <a href="https://github.com/Pedronovaes1/atividade_lista_tarefas-2" class="arrow-project"><p>Leia o caso de estudo. <i class="fa-solid fa-arrow-right"></i></p></a>
-            </div>
-           
-            <img src="images/ListaDeTarefas.png" alt="Project Image">
-            
-        </section><!-- End - section-project -->
-        <section class="section-project">
-            <div class="description-project">
-                <p style="color:#66018f"><b>Desenvolvedor Frontend - Calculadora</b></p>
-                <h1>Calculadora</h1>
-                <p>Uma calculadora feita em HTML, CSS e JS . <br></p>
-                <a href="https://github.com/Pedronovaes1/Calculdaro-JS" class="arrow-project"><p>Leia o caso de estudo. <i class="fa-solid fa-arrow-right"></i></p></a>
-            </div>
-           
-            <img src="images/calculadora.png" alt="Calculadora">
-            
-        </section><!-- End - section-project -->
 
+            <!-- Modal -->
+            <div id="modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <!-- Exemplo com vídeo -->
+                    <h3 style="color: black;">Demostração do projeto em vídeo</h3>
+                    <video controls>
+                        <source src="assets/salao.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <!-- Exemplo com imagem -->
+                    <!--<img src="images/dashboard_salao.png" alt="Project Image" class="modal-image" />--> 
+                </div>
+            </div>
+            <div class="card" onclick="openModal2()">
+                <div class="image-container">
+                <img src="images/projeto-apple.png" alt="Landing page apple" class="image" />
+                </div>
+                <div class="card-content">
+                <h3 class="card-title">Landing Page da Apple</h3>
+                <div class="tags">
+                    <span class="tag">HTML</span>
+                    <span class="tag">CSS</span>
+                    <span class="tag">Figma</span>
+                </div>
+                <p class="card-description">Landing Page da Apple, utilizando conceitos de HTML E CSS .</p>
+                </div>
+            </div>
+            <!-- Modal -->
+            <div id="modal2" class="modal">
+                <div class="modal-content">
+                    <span class="close" onclick="closeModal2()">&times;</span>
+                    <!-- Exemplo com vídeo -->
+                    <h3 style="color: black;">Demostração do projeto</h3>
+                    <video controls>
+                        <source src="assets/site-apple.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos.
+                    </video>
+                    <!-- Exemplo com imagem -->
+                    <!--<img src="images/dashboard_salao.png" alt="Project Image" class="modal-image" />--> 
+                </div>
+            </div>
+            <div class="card">
+                <div class="image-container">
+                <img src="project-image.jpg" alt="Project Title" class="image" />
+                </div>
+                <div class="card-content">
+                <h3 class="card-title">Project Title</h3>
+                <p class="card-description">Project description goes here.</p>
+                </div>
+            </div>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
         <section id="page-contact" class="contact">
             <div class="description">
                 <h2>Vamos nos conectar</h2>
                 <p>Sinta-se à vontade para entrar em contato para obter mais informações, <br> 
                     oportunidades de colaboração ou apenas um olá sincero,</p>
             </div>
-            <a href="#" id="instagram"><i class="fa-brands fa-instagram"></i> Instagram </a>
+            <a href="https://www.instagram.com/pedroc.dev?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" id="instagram"><i class="fa-brands fa-instagram"></i> Instagram </a>
             <a href="/assets/Curriculo_pedro_novaes (1).pdf" id="curriculo" download>Baixar meu curriculo</a>
         </section> <!-- End - contact -->
     </main> <!-- End - main -->
     <footer>
         <a href=""> <i class="fa-brands fa-github"></i></a>
-        <a href=""><i class="fa-brands fa-instagram"></i></a>
-        <a href=""><i class="fa-brands fa-linkedin"></i></a>    
+        <a href="https://www.instagram.com/pedroc.dev?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/pedrocnovaes/"><i class="fa-brands fa-linkedin"></i></a>    
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

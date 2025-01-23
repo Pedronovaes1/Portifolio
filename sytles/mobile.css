@@ -1,0 +1,42 @@
+@media (max-width: 920px) {
+  main{
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  header{
+    padding: 5px 20px;
+  }
+
+  header ul{
+    display: flex;
+    align-items: center;
+    justify-self: space-around;
+  }
+
+  header ul > li{
+    margin: 10px;
+  }
+
+  header h1{
+    display: none;
+  }
+
+  .section-front{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .section-front .about-my h1{
+    font-size: 30px;
+  }
+
+  .my-image{
+    margin: 40px;
+  }
+
+  .container{
+    padding: 5px;
+  }
+}

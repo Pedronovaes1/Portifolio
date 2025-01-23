@@ -1,9 +1,17 @@
+:root{
+    --color-primary: #18181b;
+    --color-text: #fff;
+    --color-animation:#ef4444;
+}
+
 html{
     scroll-behavior: smooth; /*Suavizar*/
+    background-color: var(--color-primary);
+    color: var(--color-text);
 }
 
 header{
-    background-color: white;
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -20,6 +28,10 @@ main{
     margin: 0px 150px;
 }
 
+h2{
+    color: var(--color-text);
+}
+
 header ul{
     display: flex;
     flex-direction: row;
@@ -33,11 +45,11 @@ header li{
 
 a{
     text-decoration: none;
-    color: black;
+    color: var(--color-text);
 }
 
 a:hover{
-    color: blue;
+    color: var(--color-animation);
 }
 
 ul a > svg{
@@ -77,34 +89,6 @@ ul a > svg{
     line-height: 30px;
     text-align: justify;
     color: #666;
-}
-
-/*DESIGNER DAS HARDS SKILLS*/
-.section-hardskill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.section-hardskill h2{
-    text-align: center;
-    font-size: 18px;
-    margin-top: 40px;
-    margin-bottom: 20px;
-    color: rgba(33, 32, 32, 0.61);
-}
-
-.section-hardskill .div-hardskill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.div-hardskill img{
-    width: 50px;
-    height: 50px;
-    margin: 40px;
-    border-radius: 5px;
 }
 
 .section-project{
@@ -167,14 +151,14 @@ ul a > svg{
 
 #instagram{
     padding: 15px 25px;
-    background-color: #66018f;
+    background-color:var(--color-animation);
     margin: 10px 0;
     border-radius: 10px;
     color: white;
 }
 
 #curriculo{
-    color: #66018f;
+    color: var(--color-animation);
     margin: 15px 20px;
 }
 
@@ -188,4 +172,133 @@ footer{
 
 footer a{
     margin: 30px;
+}
+
+/* Features Section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 24px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    margin-top: 48px;
+  }
+  
+  .card {
+    background-color: #1c1c1c;
+    border: 1px solid #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .card:hover{
+    transform: scale(1.05);
+    transition: 0.5s;
+  }
+  
+  .card-content {
+    padding: 24px;
+  }
+  
+  .icon {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 16px;
+    border-radius: 50%;
+  }
+  
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+  }
+  
+  .card-description {
+    color: #a1a1a1;
+    text-align: justify;
+  }
+  
+  .image{
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+  }
+
+
+  /* Modal */
+  .modal {
+    display: none; /* Inicialmente escondido */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    max-width: 90%;
+    max-height: 90%;
+    overflow: auto;
+}
+
+.modal-content video, .modal-content img {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin-top: 40px;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+    color: #000;
+}
+
+/* Estilo para quando o modal estiver visível */
+.modal.show {
+    display: block;
+}
+
+.tags {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #f3f4f6;
+    color: #333;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 12px;
+    margin: 5px 5px 0 0;
+    cursor: default;
+}
+
+.tag:hover {
+    background-color: #e5e7eb;
+    border-color: #ccc;
 }
