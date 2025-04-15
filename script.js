@@ -13,3 +13,11 @@ function openModal2() {
 function closeModal2() {
     document.getElementById('modal2').classList.remove('show');
 }
+
+function SiteNutri(){
+    window.open("https://nutrilife-ex.netlify.app/nutricionista.html", "_blank");
+}
+
+function SiteDentista(){
+    window.open("https://sorriso-perfeito-ex.netlify.app/", "_blank");
+}
